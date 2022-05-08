@@ -154,6 +154,7 @@ text-decoration: none;
   color: #000000;
 }
 
+
 .header-list__link {
   display: flex;
   align-items: center;
@@ -199,6 +200,9 @@ text-decoration: none;
   color: var(--accent-color);
 }
 
+.header-list__link.current--active {
+  color: var(--accent-color)
+}
 .header-list__link.current::after {
   position: absolute;
   bottom: 0;
@@ -661,7 +665,7 @@ text-decoration: none;
   letter-spacing: 0.03em;
 }
 
-.footer-address__web {
+.logo__web {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -671,13 +675,17 @@ text-decoration: none;
   color: #2196f3;
 }
 
-.footer-address__studio {
+.logo__studio {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  
+}
+
+.logo__studio--inverse{
   color: #ffffff;
 }
 
